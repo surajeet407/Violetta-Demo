@@ -1,0 +1,941 @@
+//scroll-bar css---------------------
+
+body::-webkit-scrollbar {
+    width: 10px;
+}
+ 
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px #000;
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: #000;
+  outline: 1px solid #000;
+  &:hover{
+    background-color: $first_color;
+  }
+}
+
+//scroll-bar css end------------------
+
+
+.body-bg {
+  background-attachment: fixed;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  width: 100%; 
+}
+
+.body-cover {
+  background-image: url("../img/cloud.png");
+  background-position-x: 0%; 
+}
+body { 
+  margin: 0;
+}
+
+.body-opt{
+overflow-y: hidden !important;
+}
+
+.pushmenu {
+  background-image: url("../img/photo.jpg");
+  background-position-x: 0%; 
+  width: 300px;
+  height: 100%;
+  top: 0;
+  z-index: 1000;
+  position: fixed;
+}
+.pushmenu-left { 
+    left: -300px; 
+}
+
+.pushmenu-left.pushmenu-open { 
+    left: 0; 
+    overflow-y: auto; 
+}
+
+body {
+  position: relative;
+  left: 0;
+  height: 100%;
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+}
+
+.pushmenu-push-toright {
+    left: 300px;
+}
+
+.pushmenu, body {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.links{
+        margin-top: 35px;
+        margin-left: 0;
+        li{
+            position: relative;
+            margin-top: 25px;
+            list-style: none;
+            -webkit-transition: all .7s ease-in-out;
+            a{
+                padding: 0px 18px;
+                color: #fff;
+                text-transform: uppercase;
+                font-weight: bold;
+                font-size: 18px;
+                font-family: $first_font;
+            }
+            .sk-violetta-link{
+                font-size: 40px;
+                text-transform: capitalize;
+                font-family: $base_font;
+                letter-spacing: 2px;
+                &:hover{
+                    color: $first_color;
+                    opacity: 1;
+                }
+            }
+            i{
+                color: #fff;
+                margin-right: 25px;
+                float: right;
+                font-size: 15px;
+            }
+            &:focus{
+                color: $first_color;
+            }
+            &:active{
+                color: $first_color;
+            }
+        }
+        li:after{
+            content: "";
+            position: absolute;
+            width: 100%;
+            left: 0;
+            height: 1px;
+            top: 40px;
+            border: 1px solid rgba(204, 204, 204, 0.23);
+            background: #fff;
+            opacity: 0.2;
+        }
+        li:nth-child(1):after{
+            content: "";
+            position: absolute;
+            width: 100%;
+            left: 0;
+            height: 1px;
+            top: 78px;
+            border: 1px solid rgba(204, 204, 204, 0.23);
+            opacity: 0.2;
+            background: #fff;
+        }
+
+        .dropdown, .dropdown1, .dropdown2, .dropdown3{
+            margin: 0;
+            padding: 0;
+            -webkit-transition: all .7s ease-in-out;
+            li{
+                margin-top: 10px;
+                list-style: none;
+                text-align: center;
+                a{
+                    padding: 0;
+                    font-size: 15px;
+                    &:hover{
+                        color: $first_color;
+                    }
+                }
+            }
+            li:after{
+                display: none;
+            }
+        }
+    .dropdown1, .dropdown2, .dropdown3{
+        margin-top: 30px;
+    }        
+}
+#nav_list {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.34);
+    border-color: rgba(0, 0, 0, 0.23);
+    margin-left: -45px;
+    z-index: 9999;
+    opacity: 1;
+}
+
+//sticky buttons css start----------------------
+
+.subscribe-btn{
+    top: 90%;
+    position: absolute;
+    left: 1%;
+    -webkit-transition: all .7s ease-in-out;
+    a{
+        position: fixed;
+        
+        i{
+            margin-left: 5px;
+            color: $brand-color;         
+            padding: 10px 10px;
+            border: 1px solid rgba(102, 102, 102, 0.34);
+            -webkit-transition: all .7s ease-in-out;
+            &:hover{
+                color: #fff;
+                background-color: rgba(0, 0, 0, 0.44);
+                -webkit-transition: all .7s ease-in-out;
+            }
+            &:focus{
+                color: $first_color;
+            }
+        }
+    }
+}
+.nav-btn{
+    top: 90%;
+    left: 95%;
+    position: absolute;
+    -webkit-transition: all .7s ease-in-out;
+    a{
+        position: fixed;
+        
+        i{
+            margin-left: 5px;
+            color: $brand-color;       
+            padding: 10px 10px;
+            border: 1px solid rgba(102, 102, 102, 0.34);
+            -webkit-transition: all .7s ease-in-out;
+            &:hover{
+                color: #fff;
+                background-color: rgba(0, 0, 0, 0.44);
+                -webkit-transition: all .7s ease-in-out;
+            }
+            &:focus{
+                color: $first_color;
+            }
+        }
+    }
+}
+
+
+
+
+//sticky buttons css end----------------------
+
+//orbit-slider css-----------------
+
+
+.orbit-next {
+    right: 10%;
+    top: 80%;
+    padding: 22px;
+    font-size: 30px;
+    background-color: rgba(255, 255, 255, 0.66);
+    color: $brand-color;
+    &:hover{
+    	color: #fff;
+    }
+}
+.orbit-previous {
+    position: absolute;
+    top: 80%;
+    font-size: 30px;
+    padding: 22px;
+    color: $brand-color;
+    left: 79%;
+    background-color: rgba(255, 255, 255, 0.66);
+    &:hover{
+    	color: #fff;
+    }
+}
+
+.orbit-caption {
+    position: absolute;
+    bottom: 28%;
+    left: 60%;
+    font-family: $base_font;
+    font-size: 35px;
+    width: 30%;
+    text-transform: uppercase;
+    color: $brand-color;
+    padding: 25px 80px;
+    background-color: rgba(255, 255, 255, 0.66);
+}
+
+
+//orbit-slider css end----------------------
+
+.layer{
+	position: absolute;
+	top: 0;left: 0;
+	width: 100%;
+	overflow: hidden;
+	ul{
+		margin: 0; 
+		padding: 0;
+		li{
+			list-style: none;
+			margin-left: 50px;
+		    float: left;
+		    margin-top: 25px;
+			h3{
+				i{
+					font-size: 25px;
+				    border: 1px solid $brand-color;
+				    padding: 8px;
+				    background: $brand-color;
+				    color: #fff;
+				    cursor: pointer;
+				    &:hover{
+				    	background-color: #fff;
+				    	color: $brand-color;
+				    }
+				}
+			}
+			.icon-list{
+				a{
+					margin-left: 20px;
+					i{
+						color: $brand-color;
+						font-size: 25px;
+						margin-top: 15px;
+						&:hover{
+							color: $first_color;
+						}
+					}
+				}
+			}
+			&:nth-child(3){
+				margin-left: 55%;
+			}
+			&:nth-child(2){
+				margin-left: 10%;
+				margin-top: 15px;
+				a{
+					color: #000;
+					text-transform: capitalize;
+					font-size: 40px;
+					font-family: $base_font;
+					text-transform: capitalize;
+					color: $brand-color;
+					&:hover{
+						color: $first_color;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+.mymenu ul.dropdown{
+	display: none;
+}
+.mymenu ul.visible{
+	display: block;
+}
+.mymenu1 ul.dropdown1{
+	display: none;
+}
+.mymenu1 ul.visible1{
+	display: block;
+}
+.mymenu2 ul.dropdown2{
+	display: none;
+}
+.mymenu2 ul.visible2{
+	display: block;
+}
+.mymenu3 ul.dropdown3{
+	display: none;
+}
+.mymenu3 ul.visible3{
+	display: block;
+}
+.off-canvas ul.menu li ul.dropdown li a {
+    @extend .same-li;
+}
+.off-canvas ul.menu li ul.dropdown3 li a {
+    @extend .same-li;
+}
+.off-canvas ul.menu li ul.dropdown1 li a {
+   @extend .same-li;
+}
+.off-canvas ul.menu li ul.dropdown2 li a {
+    @extend .same-li;
+}
+
+//progress-bar-css start-------------------
+
+
+.skills {
+  float: left;
+  margin-top: 15px; 
+}
+
+.skill-class h3{
+  position: absolute;
+  margin-left: -22px;
+  font-size: 20px;
+  margin-top: 18px;
+  font-family: $base_font; 
+}
+
+.skillsTop {
+  float: left;
+  margin-top: 10px;
+  font-size: 24px;
+  text-align: left;
+  font-family: $base_font; 
+}
+
+.skillsBottom {
+  float: left;
+  width: 100%; 
+}
+
+.progress {
+  background: rgba(204, 204, 204, 0.27);
+  height: 12px; 
+}
+
+.progress-bar {
+  background-image: linear-gradient(to right, $brand-color 0%, #000 100%);
+  height: 100%;
+  width: 0%; 
+}
+
+.design-1, .developement, .brand, .javascript {
+  transition: width 20.50s ease !important; 
+}
+
+
+//progress-bar-css end-------------------
+
+.mid-part{
+	h1{
+		@extend .title;
+	}
+	 i {
+	  font-size: 18px;
+	  margin-bottom: 18px;
+	  &:hover {
+		   color: #FDC800;
+		}
+	}
+	h2 {
+	  font-size: 25px;
+	  margin-bottom: 22px;
+	  text-transform: capitalize;
+	  font-family: $base_font;
+ 	}
+ 	hr {
+	  width: 80px;
+	  margin-left: 0;
+	  margin-top: 20px;
+	  margin-bottom: 20px;
+	  border: 0;
+	  border-top: 1px solid $brand-color; 
+	}
+	h4 {
+	  font-family: $first_font;
+	  text-transform: capitalize;
+	  margin-top: 38px; 
+	  font-weight: 600;
+	}
+	h5 {
+	  text-transform: uppercase;
+	  color: #7a7a7a;
+	  font-family: $base_font;
+	  letter-spacing: 2px; 
+	}
+	p{
+	  text-align: justify;
+	  font-family: $first_font;
+	  color: #676767;
+   }
+}
+
+.bg {
+  background-attachment: fixed;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  height: 325px !important;
+  width: 100%;
+}
+.cover {
+	background-image: url('../img/2.jpg'); 
+	background-position-x: 0%;
+}
+
+
+//css for counter part start----------------------
+
+.counter {
+	margin-top: 50px;
+	padding: 10px 40px;
+	h1 {
+	    font-weight: bold;
+	    font-size: 68px; 
+	}
+	h3 {
+	    text-transform: capitalize;
+	    font-weight: bold;
+	    font-size: 30px;
+    	letter-spacing: 2px;
+	    font-family: $base_font; 
+	}
+	h4 {
+	    font-weight: 300;
+	    font-size: 18px;
+	    line-height: 1.5;
+	    color: #1a1a1a; 
+	    font-family: $first_font;
+	}
+}
+
+
+//css for counter part end----------------------
+
+.twitter-link{
+	h3 {
+	  color: #F4F4F4;
+	  text-transform: capitalize;
+	  line-height: 1.4;
+	  margin-left: 35px;
+	  opacity: 0.7;
+	  font-size: 35px;
+	  font-family: $base_font;
+	  	i {
+		    position: absolute;
+		    margin-top: 20px;
+		    font-size: 40px;
+		    margin-left: -55px;
+		    opacity: 0.4; 
+		}
+		a {
+		    text-transform: lowercase;
+		    color: #FDC800;
+		    opacity: 0.6; 
+		    &:hover {
+		        color: #FDC800;
+    			border-bottom: 2px solid #FDC800;
+    			opacity: 1;
+		  	}
+		}
+	}
+}
+
+
+.sk-team {
+	h2{
+		@extend .title;
+	}
+	h4 {
+	  font-size: 25px;
+	  font-weight: 700;
+	  margin-top: 20px;
+	  font-family: $base_font;
+	  text-transform: capitalize; 
+	}
+	h5 {
+	  font-size: 15px;
+	  color: #666; 
+	}
+	p {
+	  letter-spacing: 1px;
+	  color: #676767;
+	  font-family: $first_font;
+	  border-bottom: 1px solid #ccc;
+	  margin-bottom: 36px;
+	  height: 85px; 
+	}
+	hr {
+	  width: 80px;
+	  margin-left: 0;
+	  margin-top: 20px;
+	  margin-bottom: 20px;
+	  border: 0;
+	  border-top: 1px solid #ccc; 
+	}
+	.team-icon {
+	  position: absolute;
+	  margin-top: -27px;
+	  ul {
+			margin: 0;
+			padding: 0;
+			li {
+		      list-style: none;
+		      float: left;
+		      margin-right: 15px; 
+		      a {
+			        color: rgba(0, 0, 0, 0.66);
+			        &:hover {
+			          color: #FDC800; 
+			      	} 
+			    }
+		  	} 
+		} 
+	}
+}
+
+.bg1 {
+  background-attachment: fixed;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  height: 380px !important;
+  width: 100%; 
+}
+
+.cover1 {
+  background-image: url("../img/1.jpg");
+  background-position-x: 0%; 
+}
+
+.slideshow-container1 {
+  position: relative;
+  margin: auto;
+  height: 270px;
+  width: 75%;
+  background-color: rgba(255, 255, 255, 0.57); 
+  	p {
+	    font-family: $base_font;
+	    position: absolute;
+	    margin-left: 130px;
+	    margin-top: -55px;
+	    text-align: justify;
+	    width: 75%; 
+	}
+	h2 {
+	    text-transform: capitalize;
+	    font-family: $first_font;
+	    position: absolute;
+	    margin-left: 130px;
+	    margin-top: 50px;
+	    font-size: 25px;
+	    font-weight: bold;
+	    font-style: italic;
+    }
+    img {
+	    margin-top: 45px;
+	    margin-left: 33px;
+	    border: 1px solid #ccc;
+	    border-radius: 50%; 
+	}
+}
+
+.prev1 {
+  cursor: pointer;
+  position: absolute;
+  top: 75%;
+  padding: 11px 17px;
+  color: $brand-color;
+  background-color: rgba(58, 52, 52, 0.14);
+  font-weight: bold;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  transition: 0.6s ease;
+  left: 2%; }
+
+.next1 {
+  cursor: pointer;
+  position: absolute;
+  top: 75%;
+  padding: 11px 17px;
+  color: $brand-color;
+  background-color: rgba(58, 52, 52, 0.14);
+  font-weight: bold;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  transition: 0.6s ease;
+  right: 80%; }
+
+.prev1:hover, .next1:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff; }
+
+ .sk-price{
+ 	h1{
+ 		@extend .title;
+ 	}
+ 	h2 {
+	  font-size: 25px;
+	  color: $brand-color;
+	  font-family: $base_font;
+	  text-transform: uppercase; 
+	}
+	p {
+	  font-family: $first_font;
+	  text-transform: uppercase;
+	  color: #666; 
+	}
+	a {
+	  display: block;
+	  background-color: $brand-color;
+	  color: #fff;
+	  text-transform: uppercase;
+	  width: 50%;
+	  margin-left: 50px;
+	  font-size: 15px;
+	  &:hover {
+	    background-color: #666;
+	    color: $first_color;
+	    }
+	}
+	.custom-price-div{
+		hr{
+			margin-top: 28px;
+	    	margin-bottom: 28px;
+		}
+		h2{
+		  	font-size: 27px;
+		  	margin-top: 10px;
+		}
+		a{
+			margin-top: 10px;	
+		}
+		p{
+			font-size: 17px;
+			margin-bottom: 18px;
+		}
+	}
+}
+
+
+.cals-h {
+    height: 335px;
+    margin-top: -25px; 
+}
+
+//map portion start--------------------
+
+#map {
+  width: 100%;
+  height: 350px; 
+}
+
+//map portion end----------------
+
+
+.infobox{
+	h3{
+		font-size: 18px;
+		a{
+			color: $brand-color;
+			font-family: $base_font;
+			text-transform: uppercase;
+			&:hover{
+				color: $first_color;
+			}
+		}
+	}
+	span{
+		text-transform: capitalize;
+		font-family: $first_font;
+	}
+	h4{
+		font-size: 16px;
+	}
+}
+
+ .sk-contact{
+ 	h2{
+ 		@extend .title;
+ 	}
+ 	input, textarea{
+ 		border: none;
+	    border-bottom: 1px solid rgba(0, 0, 0, 0.27);
+	    box-shadow: none;
+    	background-color: rgba(255, 255, 255, 0);
+    	font-size: 25px;
+	    &:focus{
+	    	border: none;
+	    	border-bottom: 1px solid $first_color;
+	    	box-shadow: none;
+	    	background-color: rgba(255, 255, 255, 0);
+	    }
+ 	}
+ 	input{
+ 		height: 55px;
+ 	}
+ 	textarea{
+ 		margin-bottom: 30px;
+ 	}
+ 	a{
+ 		text-transform: uppercase;
+ 		display: block;
+ 		background-color: $brand-color;
+ 		color: #fff;
+ 		padding: 5px 31px;
+    	font-size: 20px;
+    	width: 10%;
+ 		&:hover{
+ 			color: $first_color;
+ 			background-color: #666;
+ 		}
+ 	}
+ 	i{
+ 		font-size: 20px;
+ 	}
+ 	h5{
+ 		font-size: 20px;
+ 		font-family: $base_font;
+ 		color: $brand-color;
+ 		margin-top: 10px;
+ 		text-transform: capitalize;
+ 	}
+ 	hr{
+ 		width: 88px;
+ 	}
+ 	h4{
+ 		font-size: 20px;
+ 		color: $brand-color;
+ 		text-transform: uppercase;
+ 		font-family: $first_font;
+ 	}
+ 	p{
+ 		font-family: $base_font;
+ 		text-transform: capitalize;
+ 		color: #666;
+ 	}
+ }
+
+
+//footer-css start-------------------
+
+ .footer-part{
+ 	.footer-detail{
+ 		ul{
+ 			margin-top: 50px;
+ 			li{
+ 				margin-left: 15px;
+ 				display: inline-block;
+ 				a{
+ 					color: #fff;
+ 					text-transform: uppercase;
+ 					font-size: 20px;
+ 					opacity: 0.8;
+ 					font-family: $base_font;
+ 					&:hover{
+ 						color: $first_color;
+ 						opacity: 1;
+ 						border-bottom: 1px solid $first_color;
+ 					}
+ 				}
+ 			}
+ 		}
+ 		h2{
+ 			font-size: 18px;
+ 			color: #fff;
+ 			opacity: 0.8;
+ 			margin-bottom: 50px;
+ 			text-transform: uppercase;
+ 			font-family: $first_font;
+ 		}
+ 	}
+ 	.footer-icon{
+ 			ul{
+ 				margin-top: 65px;
+ 				li{
+ 					margin-left: 5px;
+ 					display: inline-block;
+ 					a{
+ 						display: block;
+ 						padding: 9px 15px;
+ 						color: #fff;
+ 						font-size: 18px;
+ 						opacity: 0.8;
+ 						background-color: #666;
+ 						&:hover{
+ 							background-color: $first_color;
+ 							color: $brand-color;
+ 							opacity: 1;
+ 						}
+ 					}
+ 				}
+ 			}
+ 		}
+ }
+
+//footer-css end-------------------
+
+//orbit-slider css start------------------
+
+.mySlide{
+  position: relative;
+  margin: auto;
+  height: 270px;
+  background-color: rgba(255, 255, 255, 0.57); 
+    p {
+        font-family: $base_font;
+        position: absolute;
+        margin-left: 130px;
+        margin-top: -60px;
+        text-align: justify;
+        width: 75%; 
+    }
+    h2 {
+        text-transform: capitalize;
+        font-family: $first_font;
+        position: absolute;
+        margin-left: 130px;
+        margin-top: 50px;
+        font-size: 25px;
+        font-weight: bold;
+        font-style: italic;
+    }
+    img {
+        margin-top: 45px;
+        margin-left: 33px;
+        border: 1px solid #ccc;
+        border-radius: 50%; 
+    }
+}
+.prv-btn{
+    left: 5%;
+    top: 85% !important;
+    font-size: 16px;
+    padding: 10px;
+    background-color: #fff;
+    color: $brand-color;
+    border: 1px solid #666;
+}
+.nxt-btn{
+    right: 82%;
+    top: 85% !important;
+    font-size: 16px;
+    padding: 10px;
+    background-color: #fff;
+    color: $brand-color;
+    border: 1px solid #666;
+}
+
+//orbit-slider css end------------------
+
+//animation effect on scrolling start required js css start-----------------------
+
+.hidden{
+     opacity:0;
+}
+.visible{
+     opacity:1;
+}
+
+//animation effect on scrolling css end-----------------------

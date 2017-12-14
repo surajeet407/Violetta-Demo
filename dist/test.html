@@ -1,0 +1,229 @@
+
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/img/apple-touch-icon.png">
+    <title>Violetta Agency corp.</title>
+    <link rel="stylesheet" href="assets/css/app.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDYsorgA4M86YyJIXUV0fYbMjxJ2c4sMBA&callback=initMap" async defer></script>
+  </head>
+  <body class="body-bg body-cover">
+  
+    <!-- loader -->
+    
+    <div id="preloader">
+        <div id="spinner"></div>
+    </div>
+    
+    
+    <!--loader end -->
+    
+    <!--off-canvas-fixed start-->
+    
+    <nav class="pushmenu pushmenu-left">
+      <ul class="links">
+          <li><a href="#" class="sk-violetta-link">violetta</a></li>
+          <li class="mymenu"><a href="#">home</a> <i class="fa fa-angle-down"></i>
+            <ul class="dropdown">
+              ` <li><a href="#">agency</a></li>
+                <li><a href="#">photography</a></li>
+                <li><a href="#">marketplace</a></li>
+                <li><a href="#">bloging</a></li>
+                <li><a href="#">resume CV</a></li>
+                <li><a href="#">portfolio</a></li>
+                <li><a href="#">standared menu</a></li>
+            </ul>
+          </li>
+          <li class="mymenu1"><a href="#">works</a> <i class="fa fa-angle-down"></i>
+            <ul class="dropdown1">
+                <li><a href="#">classic 2 col</a></li>
+                <li><a href="#">classic 3 col</a></li>
+                <li><a href="#">classic 4 col</a></li>
+                <li><a href="#">masonry 2 col</a></li>
+                <li><a href="#">masonry 3 col</a></li>
+                <li><a href="#">masonry 4 col</a></li>
+            </ul>
+          </li>
+          <li class="mymenu2"><a href="#">projects</a> <i class="fa fa-angle-down"></i>
+            <ul class="dropdown2">
+                <li><a href="#">single portfolio</a></li>
+                <li><a href="#">single photography</a></li>
+                <li><a href="#">single marketplace</a></li>
+                <li><a href="#">single blog</a></li>
+            </ul>
+          </li>
+          <li class="mymenu3"><a href="#">pages</a> <i class="fa fa-angle-down"></i>
+            <ul class="dropdown3">
+                <li><a href="#">our studio</a></li>
+                <li><a href="#">element</a></li>
+                <li><a href="#">defult page</a></li>
+                <li><a href="#">not found</a></li>
+                <li><a href="#">site map</a></li>
+            </ul>
+          </li>
+          <li><a href="#">blog</a></li>
+          <li><a href="#">contact</a></li>
+      </ul>
+    </nav>
+    
+    
+    <!--off-canvas-fixed end-->
+    
+    
+    
+    <!---footer-part start-->
+    
+    <div class="row post10 fullWidth bg-black footer-part">
+      <div class="mystyle1 footer-detail text-center">
+        <ul>
+            <li><a href="">home</a></li>
+            <li><a href="">about</a></li>
+            <li><a href="">contact</a></li>
+            <li><a href="">trademark</a></li>
+            <li><a href="">liscence</a></li>
+        </ul>
+        <h2>violetta ... @ 2016</h2>
+      </div>
+      <div class="mystyle1 footer-icon text-center">
+        <ul>
+            <li><a href=""><i class="fa fa-facebook"></i></a></li>
+            <li><a href=""><i class="fa fa-twitter"></i></a></li>
+            <li><a href=""><i class="fa fa-google-plus"></i></a></li>
+            <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+            <li><a href=""><i class="fa fa-github"></i></a></li>
+            <li id="pageScroll"><a href=""><i class="fa fa-angle-up"></i></a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <!---footer-part end-->
+    
+    <!---sticky-buttons start-->
+    
+    <div class="row">
+      <div class="mystyle">
+        <div class="subscribe-btn">
+            <a><i class="fa fa-envelope-o" data-toggle="animatedModal10"></i></a>
+        </div>
+        <div class="nav-btn">
+            <a> <i class="fa fa-search" data-toggle="animatedModal09"></i></a>
+        </div>
+      </div>
+    </div>
+    
+    <!---sticky-buttons end-->
+    
+    <!---modal-part-->
+    
+    <div class="reveal" id="animatedModal10" data-reveal data-close-on-click="true" data-animation-in="spin-in" data-animation-out="spin-out">
+      <form action="" method="post" data-abide novalidate>
+        <div data-abide-error class="alert callout" style="display: none;">
+          <p><i class="fi-alert"></i> Please Provide a Valid E-Mail Address</p>
+        </div>
+        <label>
+          <input type="text" placeholder="Enter Your E-Mail Adress"  aria-describedby="exampleHelpText" required pattern="email">
+          <span class="form-error">E-Mail Required</span>
+        </label>  
+        <a type="submit" value="Submit">subscribe</a>
+      </form>
+    </div>
+    
+    <!---modal-part-->
+    
+    <div class="reveal" id="animatedModal09" data-reveal data-close-on-click="true" data-animation-in="hinge-in-from-top" data-animation-out="hinge-out-from-top">
+      <form action="" method="post">
+        <input type="text" placeholder="What Are You Looking For...">
+      </form>
+    </div>
+    
+    
+
+    <script src="assets/js/app.js"></script>
+    <script>
+      $(document).ready(function() {
+    $menuLeft = $('.pushmenu-left');
+    $nav_list = $('#nav_list');
+    
+    $nav_list.click(function() {
+      $(this).toggleClass('active');
+      $('body').toggleClass('pushmenu-push-toright');
+      $('body').toggleClass('body-opt');
+      $menuLeft.toggleClass('pushmenu-open');
+    });
+  });
+    </script>
+    <script>
+          (function ($) {
+          var $container = $('.portfolio'),
+              colWidth = function () {
+                  var w = $container.width(), 
+                      columnNum = 1,
+                      columnWidth = 50;
+                  if (w > 1200) {
+                      columnNum  = 3;
+                  } 
+                  else if (w > 900) {
+                      columnNum  = 3;
+                  } 
+                  else if (w > 600) {
+                      columnNum  = 2;
+                  } 
+                  else if (w > 300) {
+                      columnNum  = 1;
+                  }
+                  columnWidth = Math.floor(w/columnNum);
+                  $container.find('.pitem').each(function() {
+                      var $item = $(this),
+                          multiplier_w = $item.attr('class').match(/item-w(\d)/),
+                          multiplier_h = $item.attr('class').match(/item-h(\d)/),
+                          width = multiplier_w ? columnWidth*multiplier_w[1]-0 : columnWidth-5,
+                          height = multiplier_h ? columnWidth*multiplier_h[1]*1-5 : columnWidth*0.5-5;
+                      $item.css({
+                          width: width,
+                          height: height
+                      });
+                  });
+                  return columnWidth;
+              }
+              function refreshWaypoints() {
+                  setTimeout(function() {
+                  }, 3000);   
+              }
+              $('nav.portfolio-filter ul a').on('click', function() {
+                  var selector = $(this).attr('data-filter');
+                  $container.isotope({ filter: selector }, refreshWaypoints());
+                  $('nav.portfolio-filter ul a').removeClass('active');
+                  $(this).addClass('active');
+                  return false;
+              });
+              function setPortfolio() { 
+                  setColumns();
+                  $container.isotope('reLayout');
+              }
+        $container.imagesLoaded( function() {
+          $container.isotope();
+        });
+              isotope = function () {
+                  $container.isotope({
+                      resizable: true,
+                      itemSelector: '.pitem',
+            layoutMode : 'masonry',
+            gutter: 10,
+                      masonry: {
+                          columnWidth: colWidth(),
+                          gutterWidth: 0
+                      }
+                  });
+              };
+          isotope();
+          $(window).smartresize(isotope);
+      }(jQuery));``
+    </script>
+  </body>
+</html>
+
+
+

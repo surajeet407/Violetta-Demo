@@ -1,0 +1,22 @@
+.bg-black{
+	background-color: #1A1A1A;
+}
+.title{
+	color: rgba(0, 0, 0, 0.11);
+    font-size: 140px;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin: 0;
+    font-family: $base_font;
+    letter-spacing: 10px;
+}
+.same-li{
+	border: none;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 15px;
+	padding: 5px;
+	&:hover{
+		color: $first_color;	
+	}
+}

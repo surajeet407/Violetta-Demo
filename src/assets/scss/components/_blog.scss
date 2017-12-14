@@ -1,0 +1,61 @@
+.off-canvas-wrapper {
+    background-color: $brand-color;
+}
+.off-canvas {
+    background-color: $brand-color;
+    ul.menu{
+        margin-top: 35px;
+        li{
+            opacity: 0.6;
+            position: relative;
+            
+            a{
+                padding: 18px 18px;
+                color: #fff;
+                text-transform: uppercase;
+                font-weight: bold;
+                border-bottom: 1px solid rgba(204, 204, 204, 0.23);
+                font-size: 15px;
+                font-family: $first_font;
+            }
+            .sk-violetta-link{
+                font-size: 40px;
+                text-transform: capitalize;
+                font-family: $base_font;
+            }
+            i{
+                color: #fff;
+                margin-top: -36px;
+                margin-right: 25px;
+                float: right;
+                font-size: 15px;
+            }
+            &:hover{
+               opacity: 1;
+            }
+            &:focus{
+                color: $first_color;
+            }
+        }
+    }
+    .close-button{
+        &:hover{
+            color: #fff;
+            opacity: 1;
+        }
+    }
+}   
+
+
+
+
+
+
+
+
+
+
+
+
+
+

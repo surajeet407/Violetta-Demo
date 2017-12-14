@@ -1,0 +1,352 @@
+.item-h2,
+.item-h1 {
+    height: 100% !important;
+    height: auto !important;
+}
+
+.isotope-item {
+    z-index: 2;
+    padding: 0;
+}
+
+.isotope-hidden.isotope-item {
+    pointer-events: none;
+    z-index: 1;
+}
+
+.isotope,
+.isotope .isotope-item {
+    /* change duration value to whatever you like */
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+}
+
+.isotope {
+    -webkit-transition-property: height, width;
+    -moz-transition-property: height, width;
+    transition-property: height, width;
+}
+
+.isotope .isotope-item {
+    -webkit-transition-property: -webkit-transform, opacity;
+    -moz-transition-property: -moz-transform, opacity;
+    transition-property: transform, opacity;
+}
+
+.nobotmar {
+    margin-bottom: 0 !important
+}
+
+.entry {
+    position: relative;
+    padding: 0 !important;
+    margin-bottom: 0;
+    overflow: hidden;
+}
+
+.entry a {
+    cursor: crosshair !important;
+}
+
+.magnifier {
+    position: absolute;
+    top: 0;
+    cursor: pointer;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0+100;Neutral+Density */
+    background-color: rgba(0, 0, 0, 0.8);
+    left: 500px;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    zoom: 1;
+    cursor: crosshair;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.entry:hover .magnifier {
+    zoom: 1;
+    left: 0;
+    filter: alpha(opacity=100);
+    opacity: 1;
+}
+
+.entry .magnifier {
+    -moz-transform: -moz-transform 0.9s ease-in-out;
+    -o-transform: -o-transform 0.9s ease-in-out;
+    -webkit-transition: -webkit-transform 0.9s ease-in-out;
+    transition: transform 0.9s ease-in-out;
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+
+.entry:hover .magnifier {
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+
+.magnifier .magni-desc {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    text-align: center;
+    bottom: 10px;
+    opacity: 0;
+    width: 100%;
+    margin: -20px auto;
+    display: block;
+}
+
+.entry:hover .magnifier .magni-desc {
+    zoom: 1;
+    filter: alpha(opacity=100);
+    opacity: 1;
+}
+
+.magnifier .magni-desc h4 a,
+.magnifier .magni-desc h4 {
+    font-size: 14px;
+    letter-spacing: 2px;
+    font-weight: 400;
+    text-decoration: none !important;
+    text-transform: uppercase;
+}
+
+.magnifier .magni-desc p,
+.magnifier .magni-desc a {
+    color: #ffffff !important;
+}
+
+.magnifier .magni-desc p {
+    letter-spacing: 1px;
+    color: #aaa !important;
+    font-size: 11px;
+}
+
+.magnifier .magni-desc .secondicon,
+.magnifier .magni-desc .firsticon {
+    position: absolute;
+    margin: 0 !important;
+    text-align: center;
+    font-size: 11px !important;
+    width: 35px;
+    height: 35px;
+    left: 10px;
+    bottom: 20px;
+    color: #ffffff !important;
+    line-height: 35px;
+    background-color: #000;
+    display: inline-block;
+    -webkit-transition: all .7s ease-in-out;
+    -moz-transition: all .7s ease-in-out;
+    -ms-transition: all .7s ease-in-out;
+    -o-transition: all .7s ease-in-out;
+    transition: all .7s ease-in-out;
+}
+
+.magnifier .magni-desc .secondicon {
+    right: 10px;
+    left: auto;
+}
+
+.hovericons {
+    position: absolute;
+    right: 200px;
+    left: 0;
+    margin: -18px auto;
+    opacity: 0;
+    text-align: center;
+    bottom: 0;
+    top: 50%;
+    background-color: #ddd;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    display: block;
+    -webkit-transition: all .7s ease-in-out;
+    -moz-transition: all .7s ease-in-out;
+    -ms-transition: all .7s ease-in-out;
+    -o-transition: all .7s ease-in-out;
+    transition: all .7s ease-in-out;
+}
+
+.entry:hover .hovericons {
+    right: 0;
+    opacity: 1;
+}
+
+.portfolio-filter ul {
+    padding: 0;
+    z-index: 2;
+    display: block;
+    position: relative;
+    margin: 0;
+}
+
+.portfolio-filter ul li {
+    border-radius: 0;
+    display: inline-block;
+    margin: 0 5px 0 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    vertical-align: middle;
+}
+
+.portfolio-filter ul li:last-child:after {
+    content: "";
+}
+
+.portfolio-filter .btn-default:active:hover,
+.portfolio-filter .btn-default.active:hover,
+.portfolio-filter .btn-default:active:focus,
+.portfolio-filter .btn-default.active:focus,
+.portfolio-filter .btn-default:active.focus,
+.portfolio-filter .btn-default.active.focus,
+.portfolio-filter .btn-default {
+    background-color: #ffffff !important;
+    border: 1px solid #1a1a1a !important;
+    box-shadow: none !important;
+    color: #2d2d2d !important;
+    font-size: 11px;
+    font-weight: 600;
+    border-radius: 0;
+    letter-spacing: 1px;
+    margin: 0 !important;
+    outline: medium none !important;
+    padding: 9px 18px;
+}
+
+.lightbg .photo-desc,
+.lightbg .portfolio-filter .btn-default:active:hover,
+.lightbg .portfolio-filter .btn-default.active:hover,
+.lightbg .portfolio-filter .btn-default:active:focus,
+.lightbg .portfolio-filter .btn-default.active:focus,
+.lightbg .portfolio-filter .btn-default:active.focus,
+.lightbg .portfolio-filter .btn-default.active.focus,
+.lightbg .portfolio-filter .btn-default {
+    background-color: #fff !important;
+}
+
+.post-media img {
+    width: 100%;
+}
+
+.portfolio-content .widget-title {
+    margin-bottom: 0;
+}
+
+.portfolio-content .pdetail {
+    padding: 15px 0;
+    display: block;
+}
+
+.portfolio-content .pbutton {
+    padding: 0;
+    display: block;
+}
+
+.portfolio-content .pdetail:last-child {
+    border-bottom: 0;
+}
+
+.pdetail a {
+    color: #999999;
+}
+
+.portfolio-content h5 {
+    letter-spacing: 2px;
+    padding: 0 0 20px;
+    margin: 0;
+    line-height: 1;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+.portfolio-media img {
+    padding: 30px;
+    background-color: #F4F4F4;
+    margin-bottom: 20px;
+}
+
+.portfolio-filter .btn-default:hover,
+.portfolio-filter .btn-default:focus {
+    background-color: #2d2d2d !important;
+    color: #ffffff !important;
+}
+
+#normalportfolio {
+    overflow: visible !important;
+}
+
+#normalportfolio .pitem img {
+    width: 100%;
+}
+
+hr.invis {
+    border: 0;
+    margin: 40px 0;
+}
+
+hr.invis1 {
+    border: 0;
+    margin: 80px 0;
+}
+
+#normalportfolio .pitem {
+    margin: 0 !important;
+    padding: 0 15px 30px !important;
+}
+
+.text-center .titlehr {
+    margin: 20px 0 0 !important;
+    width: 100%;
+    padding-bottom: 0 !important
+}
+
+.tooltip-inner {
+    background-color: #2d2d2d;
+    padding: 4px 13px;
+    border-radius: 0;
+}
+
+.tooltip.top .tooltip-arrow {
+    border-top-color: #2d2d2d;
+}
+
+.centermessage h4 {
+    display: inline-block;
+    font-size: 26px !important;
+    font-weight: 900;
+    line-height: 1.1;
+    margin: 0 0 20px;
+    position: relative !important;
+}
+
+.centermessage p {
+    font-style: italic;
+    font-weight: 400;
+    line-height: 1.8;
+    font-size: 15px;
+    color: #888888;
+    margin: 0;
+}
+
+.mark,
+mark {
+    margin: 0 2px;
+    padding: 0 6px;
+}
+
+

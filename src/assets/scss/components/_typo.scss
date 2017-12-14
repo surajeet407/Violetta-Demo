@@ -1,0 +1,40 @@
+/**
+*
+* Typography Styling
+*
+**/
+.fullWidth {
+   width: 100%;
+   margin-left: auto;
+   margin-right: auto;
+   max-width: initial;
+}
+.full-col{
+  padding: 0;
+  margin: 0;
+}
+
+
+.container {
+  @include grid-row;
+}
+
+.mystyle {
+  @include grid-col(12);
+  @include breakpoint(medium) {
+    @include grid-col-size(12);
+  }
+  @include breakpoint(small) {
+    @include grid-col-size(12);
+  }
+}
+
+.mystyle1 {
+  @include grid-col(6);
+  @include breakpoint(medium) {
+    @include grid-col-size(6);
+  }
+  @include breakpoint(small) {
+    @include grid-col-size(12);
+  }
+}
